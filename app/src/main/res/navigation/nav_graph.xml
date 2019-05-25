@@ -20,4 +20,9 @@
         android:name="com.larh.appmobileexample.view.DetalleFragment"
         android:label="fragment_detalle"
         tools:layout="@layout/fragment_detalle" />
+    <fragment
+        android:id="@+id/inicioTwoFragment"
+        android:name="com.larh.appmobileexample.view.InicioTwoFragment"
+        android:label="fragment_inicio_two"
+        tools:layout="@layout/fragment_inicio_two" />
 </navigation>
