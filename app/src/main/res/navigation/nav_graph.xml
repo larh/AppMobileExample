@@ -7,12 +7,17 @@
 
     <fragment
         android:id="@+id/inicioFragment"
-        android:name="com.larh.appmobileexample.InicioFragment"
+        android:name="com.larh.appmobileexample.view.InicioFragment"
         android:label="@string/inicio_titulo"
         tools:layout="@layout/fragment_inicio" />
     <fragment
         android:id="@+id/perfilFragment"
-        android:name="com.larh.appmobileexample.PerfilFragment"
+        android:name="com.larh.appmobileexample.view.PerfilFragment"
         android:label="@string/perfil_titulo"
         tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.larh.appmobileexample.view.DetalleFragment"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" />
 </navigation>
