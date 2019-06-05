@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -73,6 +75,8 @@ public class DetalleFragment extends Fragment {
         imagenes.add("https://www.gnu.org/graphics/babies/GnuTux.jpg");
 
         iniciarSlider(view, imagenes);
+
+        setHasOptionsMenu(true);
 
         return view;
     }
@@ -150,4 +154,13 @@ public class DetalleFragment extends Fragment {
         super.onResume();
         mListener.onFragmentInteraction(this);
     }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.clear();
+        inflater.inflate(R.menu.menu_custom, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+
+    }
+
 }
